@@ -1,0 +1,22 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include<string>
+using namespace std;
+int main() {
+  int score;
+  vector<int>searcher;
+  cout<<"please enter your num: ";
+  cin >>score;
+  searcher.push_back(score);
+  //cout << searcher[0] ;
+
+  while(score!=0){
+    cout<<"please enter your num";
+    cin>>score;
+    searcher.push_back(score);
+    
+  }
+  sort(searcher.begin(), searcher.end(), greater<int>());
+  cout <<"2nd bigger number:"<< searcher[1] << endl;
+}
